@@ -9,7 +9,9 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'blue': '#1fb6ff',
+      'primary': '#ff204e',
+      'light': '#FFFFFF',
+      'blue': '#00224D',
       'purple': '#7e5bef',
       'pink': '#ff49db',
       'orange': '#ff7849',
