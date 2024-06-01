@@ -43,7 +43,6 @@ export default function RootLayout({
           <div className="fixed top-0 left-1/2 transform -translate-x-1/2 w-2/3">
             <FireNavigationBar
               menuItems={menuItems}
-              socialMediaMenuItems={socialMediaMenuItems}
             />
           </div>
           {children}
