@@ -2,19 +2,19 @@ import Image from 'next/image';
 import React from 'react';
 
 export interface IconProps {
-    src: string;
+    src?: string;
     /**
      * Alt of the icon
      */
-    alt: string;
+    alt?: string;
     /**
      * Width of the icon
      */
-    iconWidth: number;
+    iconWidth?: number;
     /**
      * Height of the icon
      */
-    iconHeight: number;
+    iconHeight?: number;
     /**
      * redirection link for the icon
      */

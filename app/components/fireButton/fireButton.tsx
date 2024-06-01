@@ -24,13 +24,13 @@ interface ButtonProps {
      */
     addIcon?: boolean;
 
-    src: string;
+    src?: string;
 
-    alt: string;
+    alt?: string;
 
-    iconWidth: number;
+    iconWidth?: number;
 
-    iconHeight: number;
+    iconHeight?: number;
 
     isLoading?: boolean;
 
@@ -68,7 +68,7 @@ export const FireButton = ({
 }: ButtonProps) => {
     const mode = `
     flex items-center justify-center py-3 px-6 rounded-lg hover:shadow-lg shadow-gray
-    ${primary ? ' bg-primary text-light' : ' bg-light text-primary border border-primary'}
+    ${primary ? ' bg-navi-light text-light' : ' bg-light text-navi-light border border-navi-light'}
     ${addIcon ? ' gap-2' : ''}
     ${isDisabled ? ' pointer-events-none opacity-50 cursor-not-allowed' : ''}
     ${isLoading ? ' pointer-events-none cursor-not-allowed' : ''}

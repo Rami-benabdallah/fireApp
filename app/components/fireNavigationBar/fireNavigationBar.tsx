@@ -2,19 +2,17 @@ import React from 'react';
 import { FireNavigationMenu } from './fireNavigationMenu/fireNavigationMenu';
 import { fireNavigationMenuItemProps } from './fireNavigationMenuItem/fireNavigationMenuItem';
 import { FireIcon as FireLogo } from '../fireIcon/fireIcon';
-import { FireNavigationIconMenu, SocialMediaItemProps } from './fireNavigationIconMenu/fireNavigationIconMenu';
+import Image from 'next/image';
 
 interface fireNavigationBarProps {
     menuItems: Array<fireNavigationMenuItemProps>;
-    socialMediaMenuItems: Array<SocialMediaItemProps>;
 }
 
 export const FireNavigationBar = ({
     menuItems,
-    socialMediaMenuItems,
 }: fireNavigationBarProps) => {
     return (
-        <div className='w-full flex items-center gap-28 text-light bg-primary p-6 justify-between'>
+        <div className='w-full flex items-center gap-28 text-navi-light p-6 justify-between border-b-4 border-navi-light bg-light h-20'>
             <div className='w-full flex'>
                 <div className='mr-10 ml-10'>
                     <FireLogo
@@ -28,9 +26,12 @@ export const FireNavigationBar = ({
                     menuItems={menuItems}
                 />
             </div>
-            <div className='mr-10'>
-                <FireNavigationIconMenu
-                    iconMenuItems={socialMediaMenuItems}
+            <div className='mr-10 cursor-pointer'>
+                <Image
+                    src='/globeLanguage.svg'
+                    alt='logo'
+                    width={30}
+                    height={30}
                 />
             </div>
         </div>
