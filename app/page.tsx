@@ -6,7 +6,7 @@ import { FireOnTheMarket } from "./components/fireOnTheMarket/fireOnTheMarket";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between gap-24">
+    <main className="flex flex-col items-center justify-between gap-24 p-6">
       <FireCompanyLanding />
       <div className="mt-20">
         <FireOnTheMarket />

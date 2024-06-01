@@ -27,12 +27,5 @@ export const Primary: Story = {
       { label: 'Products', link: '/products' },
       { label: 'Contact', link: '/contact' }
     ],
-    socialMediaMenuItems: [
-      { alt: 'Facebook', link: 'https://www.facebook.com', src: '/assets/youtube.svg' },
-      { alt: 'LinkedIn', link: 'https://www.linkedin.com', src: '/assets/youtube.svg' },
-      { alt: 'Instagram', link: 'https://www.instagram.com', src: '/assets/youtube.svg' },
-      { alt: 'YouTube', link: 'https://www.youtube.com', src: '/assets/youtube.svg' },
-      { alt: 'Twitter', link: 'https://www.twitter.com', src: '/assets/youtube.svg' }
-    ],
   },
 };

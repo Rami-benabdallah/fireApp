@@ -11,14 +11,14 @@ export const FireOnTheMarket = ({
             <div className='flex flex-col justify-center items-center gap-12'>
                 <p className='text-navi'>On the Market since 2013 with the guidance of</p>
                 <span>Petra Eschenfelder</span>
-                <p>Staatlich anerkannte Sachverständige für die Prüfung des Brandschutzes</p>
+                <span className='text-center w-3/4'>Staatlich anerkannte Sachverständige für die Prüfung des Brandschutzes</span>
             </div>
-            <div className='flex flex-row mt-16 shadow-lg shadow-gray-light'>
-                <div className='flex flex-col justify-center items-center p-14 border-r border-navi-light'>
-                    <span className='text-navi-light text-6xl'>200 +</span>
+            <div className='flex flex-col md:flex-row mt-16 shadow-lg shadow-gray-light'>
+                <div className='flex flex-col justify-center items-center p-14 border-b md:border-b-0 md:border-r border-navi-light'>
+                    <span className='text-navi-light text-6xl'>200+</span>
                     <span>Customers</span>
                 </div>
-                <div className='flex flex-col justify-center items-center p-14 border-r border-navi-light'>
+                <div className='flex flex-col justify-center items-center p-14 border-b md:border-b-0 md:border-r border-navi-light'>
                     <span className='text-navi-light text-6xl'>500+</span>
                     <span>Projects done</span>
                 </div>

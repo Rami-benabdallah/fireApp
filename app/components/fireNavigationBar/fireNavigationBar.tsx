@@ -13,8 +13,8 @@ export const FireNavigationBar = ({
 }: fireNavigationBarProps) => {
     return (
         <div className='w-full flex items-center gap-28 text-navi-light p-6 justify-between border-b-4 border-navi-light bg-light h-20'>
-            <div className='w-full flex'>
-                <div className='mr-10 ml-10'>
+            <div className='w-full flex justify-between'>
+                <div className='ml-10'>
                     <FireLogo
                         src='/vercel.svg'
                         alt='logo'
@@ -22,19 +22,20 @@ export const FireNavigationBar = ({
                         iconHeight={24}
                     />
                 </div>
-                <FireNavigationMenu
-                    menuItems={menuItems}
-                />
+                <div className='mr-10 hidden sm:flex'>
+                    <FireNavigationMenu
+                        menuItems={menuItems}
+                    />
+                </div>
             </div>
-            <div className='mr-10 cursor-pointer'>
+            <div className='cursor-pointer block sm:hidden'>
                 <Image
-                    src='/globeLanguage.svg'
+                    src='/menu.svg'
                     alt='logo'
-                    width={30}
-                    height={30}
+                    width={35}
+                    height={35}
                 />
             </div>
         </div>
-
     );
 };

@@ -66,10 +66,10 @@ export const FireTasksWithPics = ({
     return (
         <div className='w-full flex items-center flex-col gap-8 p-6 justify-between'>
             {data.map((group, groupIndex) => (
-                <div className='w-full flex flex-row  '>
+                <div className='w-full flex flex-col md:flex-row  '>
                     {groupIndex % 2 === 0 ? (
                         <>
-                            <div className='w-1/2 flex justify-center'>
+                            <div className='w-full md:w-1/2 flex justify-center'>
                                 <Image
                                     src='/building_design_diagrams.png'
                                     alt='test'
@@ -77,7 +77,7 @@ export const FireTasksWithPics = ({
                                     height={240}
                                 />
                             </div>
-                            <div className='w-1/2 flex justify-center'>
+                            <div className='w-full md:w-1/2 flex justify-center'>
                                 <div className='w-3/4 flex flex-col justify-center gap-6 text-justify'>
                                     <h2 className='uppercase'>{group.groupName} :</h2>
                                     <ul>
@@ -94,7 +94,7 @@ export const FireTasksWithPics = ({
                         </>
                     ) : (
                         <>
-                            <div className='w-1/2 flex justify-center'>
+                            <div className='w-full md:w-1/2 flex justify-center'>
                                 <div className='w-3/4 flex flex-col justify-center gap-6 text-justify'>
                                     <h2 className='uppercase'>{group.groupName} :</h2>
                                     <ul className='flex flex-col gap-4'>
@@ -108,7 +108,7 @@ export const FireTasksWithPics = ({
                                     </ul>
                                 </div>
                             </div>
-                            <div className='w-1/2 flex justify-center'>
+                            <div className='w-full md:w-1/2 flex justify-center'>
                                 <Image
                                     src='/building_design_diagrams.png'
                                     alt='test'
