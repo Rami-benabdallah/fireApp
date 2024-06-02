@@ -20,6 +20,10 @@ interface ButtonProps {
      */
     label: string;
     /**
+ * Button type
+ */
+    type?: "submit" | "reset" | "button" | undefined;
+    /**
      * Should add an icon?
      */
     addIcon?: boolean;
@@ -55,6 +59,7 @@ interface ButtonProps {
 export const FireButton = ({
     primary = false,
     label,
+    type,
     addIcon = false,
     src,
     alt,
@@ -76,6 +81,7 @@ export const FireButton = ({
     return (
         <button
             className={mode}
+            type={type ? type : undefined}
         >
             {isLoading ? (
                 <FireLoadingSpinner
