@@ -2,10 +2,10 @@
 import React from 'react';
 import { useForm, SubmitHandler } from "react-hook-form"
 import { FireButton } from '../../fireButton/fireButton';
+import axios from 'axios';
 
 
 type Inputs = {
-    test: string
     name: string
     email: string
     message: string
@@ -23,9 +23,22 @@ export const FireForm = ({
         watch,
         formState: { errors },
     } = useForm<Inputs>()
-    const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
+    const onSubmit: SubmitHandler<Inputs> = async (data) => {
+        const response = await fetch('/api/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
 
-    console.log(watch("message"))
+        if (response.ok) {
+            console.log('Email sent successfully!');
+        } else {
+            console.error('Error sending email:', response.status);
+        }
+    };
+
     return (
         /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-12'>
