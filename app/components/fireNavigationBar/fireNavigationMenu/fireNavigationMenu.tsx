@@ -14,7 +14,7 @@ export const FireNavigationMenu = ({
 }: fireNavigationMenuProps) => {
 
     return (
-        <ul className='flex flex-row gap-4'>
+        <ul className='flex flex-row gap-6'>
             {menuItems.map((item, index) => (
                 <li key={index}>
                     <FireNavigationMenuItem

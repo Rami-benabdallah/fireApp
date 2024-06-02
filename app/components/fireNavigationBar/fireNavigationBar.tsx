@@ -12,7 +12,7 @@ export const FireNavigationBar = ({
     menuItems,
 }: fireNavigationBarProps) => {
     return (
-        <div className='w-full flex items-center gap-28 text-navi-light p-6 justify-between border-b-4 border-navi-light bg-light h-20'>
+        <div className='w-full flex items-center gap-28 p-6 justify-between border-b-4 border-navi-light bg-light h-20'>
             <div className='w-full flex justify-between'>
                 <div className='ml-10'>
                     <FireLogo
